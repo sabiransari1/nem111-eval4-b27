@@ -6,10 +6,10 @@ export const SignupPage = () => {
   const [gender, setGender] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch(`https://vivacious-tuna-girdle.cyclic.app/users/register`, {
+    fetch(`https://nem111-eval4-b27-server.onrender.com/users/register`, {
       method: "POST",
       headers: {
         "content-type": "application/json",

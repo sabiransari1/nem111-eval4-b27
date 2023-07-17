@@ -4,10 +4,10 @@ export const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch(`https://vivacious-tuna-girdle.cyclic.app/users/login`, {
+    fetch(`https://nem111-eval4-b27-server.onrender.com/users/login`, {
       method: "POST",
       headers: {
         "content-type": "application/json",

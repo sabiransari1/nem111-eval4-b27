@@ -5,10 +5,10 @@ export const PostsPage = () => {
   const [body, setBody] = useState("");
   const [token, setToken] = useState("");
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch(`https://vivacious-tuna-girdle.cyclic.app/posts/addposts`, {
+    fetch(`https://nem111-eval4-b27-server.onrender.com/posts/addposts`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -42,7 +42,7 @@ export const PostsPage = () => {
 
         <input
           type="text"
-          placeholder="Enter your password"
+          placeholder="Enter your body"
           value={body}
           onChange={(e) => setBody(e.target.value)}
         />
